@@ -11,12 +11,18 @@ const swiper = new Swiper('.swiper-1', {
   pagination: {
     el: ".swiper-pagination",
     clickable: true
+  },
+  breakpoints: {
+    576: {
+        slidesPerView: 3,
+        slidesPerColumn: 4,
+    }
   }
 });
 
-if (window.matchMedia("(min-width: 992px)").matches) {
-  swiper.destroy(true, true);
-} 
+// if (window.matchMedia("(min-width: 992px)").matches) {
+//   swiper.destroy(true, true);
+// } 
 
 
 /* show/hide sublevel elements */
