@@ -1,9 +1,3 @@
-/* current year */
-// let now = new Date();
-// let cur_year = now.getFullYear();
-// document.getElementById('year').innerHTML = cur_year;
-
-
 const swiper = new Swiper('.swiper-1', {
   slidesPerView: 2,
   slidesPerColumn: 4,

@@ -348,3 +348,35 @@ input.search-in-list{
 }
 .overlap {display: block !important;}
 .diff {display: none !important;}
+
+
+/************  
+MODAL WINDOWS
+*************/
+.modal-content {
+  position: relative;
+  padding: 3em;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+.btn-close {
+  display: flex;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 1.5em;
+  height: 1.5em;
+  background: none;
+}
+.btn-close svg {
+  width: 1.5em;
+  height: 1.5em;
+  fill: none;
+}
+.btn-close svg path {
+  stroke:#3C3939;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

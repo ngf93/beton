@@ -49,7 +49,7 @@
 				</nav>
 			</div>
 			<div>
-				<a href="#">Вход/регистрация <img src="images/icons/log-in.svg" alt=""></a>
+				<button type="button" data-bs-toggle="modal" data-bs-target="#registration">Вход/регистрация <img src="images/icons/log-in.svg" alt=""></button>
 			</div>
 		</div>
 	</header>
@@ -371,15 +371,90 @@
 	<footer class="mobile d-flex d-md-none justify-content-between py-3 px-5">
 		<button><img src="images/icons/home.svg" alt=""></button>
 		<button><img src="images/icons/mail.svg" alt=""></button>
-		<button><img src="images/icons/map.svg" alt=""></button>
-		<button><img src="images/icons/user.svg" alt=""></button>
+		<a href="#"><img src="images/icons/news.svg" alt=""></a>
+		<button><img src="images/icons/truck.svg" alt=""></button>
 	</footer>
 
 	<!-- Skripts -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="registration" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+					<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18 6L6 18"/>
+						<path d="M6 6L18 18"/>
+					</svg>					
+				</button>
+				<h3 class="text-center">Регистрация</h3>
+				<div class="fw_5 gray text-center mb-3">Введите номер телефона</div>
+				<div class="row justify-content-center">
+					<div class="col-6">
+						<form action="">
+							<input type="text" placeholder="+7 (985) 567-56-55">
+							<button type="button" data-bs-toggle="modal" data-bs-target="#confirmation" class="btn_main w-100 w-md-auto mt-3">Продолжить</button>
+						</form>
+					</div>
+				</div>
+				<div class="text-center d-flex justify-content-center mt-3">
+					<div>У вас есть учетная запись?</div>
+					<button type="button" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#entrance" class="blue fw_5 ms-2">Войти</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="confirmation" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+					<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18 6L6 18"/>
+						<path d="M6 6L18 18"/>
+					</svg>					
+				</button>
+				<h3 class="text-center">Подтвердите номер телефона</h3>
+				<div class="gray text-center mb-3">В течение 2 минут вы получите СМС с кодом подтверждения на номер телефона +7 (985) 567-56-55</div>
+				<div class="row justify-content-center">
+					<div class="col-9">
+						<form action="">
+							<input type="text" placeholder="Введите код">
+							<button type="button" class="blue mt-1">Получить новый код</button>
+							<button type="submit" class="btn_main w-100 w-md-auto mt-3">Подтвердить</button>
+							<button type="button" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registration" class="btn_main w-100 w-md-auto mt-3">Изменить номер телефона</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="entrance" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+					<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18 6L6 18"/>
+						<path d="M6 6L18 18"/>
+					</svg>					
+				</button>
+				<h3 class="text-center">Вход</h3>
+				<div class="fw_5 gray text-center mb-3">Введите номер телефона</div>
+				<div class="row justify-content-center">
+					<div class="col-6">
+						<form action="">
+							<input type="text" placeholder="+7 (985) 567-56-55">
+							<button type="button" data-bs-toggle="modal" data-bs-target="#confirmation" class="btn_main w-100 w-md-auto mt-3">Продолжить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-	<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 	<script type="text/javascript" src="js/swiper-bundle.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/range-slider.js"></script>
