@@ -15,12 +15,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header class="d-none d-md-block py-2 py-xl-3 mb-4">
-		<div class="container d-flex justify-content-between align-items-center">
-			<div class="d-flex align-items-center">
+	<header class="py-md-2 py-xl-3 mb-4">
+		<div class="container-md d-flex justify-content-between align-items-center position-relative">
+			<div class="d-flex justify-content-center justify-content-md-start align-items-center flex-1">
 				<img src="images/logo.png" class="logo">
 
-				<div class="custom-select ms-4">
+				<div class="d-none d-md-block custom-select ms-4">
 					<button type="button" class="py-3 w-100">Казань</button>
 					<div class="options search-list p-3">
 						<input type="search" placeholder="Поиск" class="search-in-list">
@@ -43,14 +43,31 @@
 					</div>
 				</div>
 
-				<nav class="d-flex align-items-center ms-4">
+				<nav class="d-none d-md-flex align-items-center ms-4">
 					<a href="#">О нас</a>
-					<a href="#">Новости</a>
+					<a href="articles.html">Новости</a>
 				</nav>
 			</div>
-			<div>
-				<button type="button" data-bs-toggle="modal" data-bs-target="#registration">Вход/регистрация <img src="images/icons/log-in.svg" alt=""></button>
+			<div class="d-flex align-items-center header-btns">
+				<!-- ВХОД - кнопка должна отображаться, если пользователь не зарегистрирован или не вошёл в свой аккаунт -->
+				<button class="d-flex btn-svg" type="button" data-bs-toggle="modal" data-bs-target="#registration">
+					<span class="d-none d-md-block me-2">Вход/регистрация</span>
+					<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13 1H17C17.5304 1 18.0391 1.21071 18.4142 1.58579C18.7893 1.96086 19 2.46957 19 3V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H13"/>
+						<path d="M8 15L13 10L8 5"/>
+						<path d="M13 10H1"/>
+					</svg>						
+				</button>
+				<!-- ВЫХОД - кнопка должна отображаться, если пользователь вошёл в свой аккаунт -->
+				<button type="button" class="btn-svg">
+					<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+						<path d="M14 15L19 10L14 5"/>
+						<path d="M19 10H7"/>
+						<path d="M7 1H3C2.46957 1 1.96086 1.21071 1.58579 1.58579C1.21071 1.96086 1 2.46957 1 3V17C1 17.5304 1.21071 18.0391 1.58579 18.4142C1.96086 18.7893 2.46957 19 3 19H7"/>
+					</svg>						
+				</button>
 			</div>
+			
 		</div>
 	</header>
 
@@ -371,7 +388,7 @@
 	<footer class="mobile d-flex d-md-none justify-content-between py-3 px-5">
 		<button><img src="images/icons/home.svg" alt=""></button>
 		<button><img src="images/icons/mail.svg" alt=""></button>
-		<a href="#"><img src="images/icons/news.svg" alt=""></a>
+		<a href="articles.html"><img src="images/icons/news.svg" alt=""></a>
 		<button><img src="images/icons/truck.svg" alt=""></button>
 	</footer>
 
@@ -394,18 +411,39 @@
 					<div class="col-6">
 						<form action="">
 							<input type="text" placeholder="+7 (985) 567-56-55">
-							<button type="button" data-bs-toggle="modal" data-bs-target="#confirmation" class="btn_main w-100 w-md-auto mt-3">Продолжить</button>
+							<button type="button" data-bs-toggle="modal" data-bs-target="#confirmation" data-bs-dismiss="modal" class="btn_main w-100 w-md-auto mt-3">Продолжить</button>
 						</form>
 					</div>
 				</div>
 				<div class="text-center d-flex justify-content-center mt-3">
 					<div>У вас есть учетная запись?</div>
-					<button type="button" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#entrance" class="blue fw_5 ms-2">Войти</button>
+					<button type="button" data-bs-toggle="modal" data-bs-target="#entrance" data-bs-dismiss="modal" class="blue fw_5 ms-2">Войти</button>
 				</div>
 			</div>
 		</div>
 	</div>
-
+	<div class="modal fade" id="entrance" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+					<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18 6L6 18"/>
+						<path d="M6 6L18 18"/>
+					</svg>					
+				</button>
+				<h3 class="text-center">Вход</h3>
+				<div class="fw_5 gray text-center mb-3">Введите номер телефона</div>
+				<div class="row justify-content-center">
+					<div class="col-6">
+						<form action="">
+							<input type="text" placeholder="+7 (985) 567-56-55">
+							<button type="button" data-bs-toggle="modal" data-bs-target="#confirmation" class="btn_main w-100 w-md-auto mt-3">Продолжить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="modal fade" id="confirmation" tabindex="-1" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -424,29 +462,6 @@
 							<button type="button" class="blue mt-1">Получить новый код</button>
 							<button type="submit" class="btn_main w-100 w-md-auto mt-3">Подтвердить</button>
 							<button type="button" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registration" class="btn_main w-100 w-md-auto mt-3">Изменить номер телефона</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="entrance" tabindex="-1" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-					<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-						<path d="M18 6L6 18"/>
-						<path d="M6 6L18 18"/>
-					</svg>					
-				</button>
-				<h3 class="text-center">Вход</h3>
-				<div class="fw_5 gray text-center mb-3">Введите номер телефона</div>
-				<div class="row justify-content-center">
-					<div class="col-6">
-						<form action="">
-							<input type="text" placeholder="+7 (985) 567-56-55">
-							<button type="button" data-bs-toggle="modal" data-bs-target="#confirmation" class="btn_main w-100 w-md-auto mt-3">Продолжить</button>
 						</form>
 					</div>
 				</div>

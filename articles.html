@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Бетон - Новости и полезные статьи</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/range-slider.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="py-md-2 py-xl-3 mb-md-4">
+		<div class="container-md d-flex justify-content-between align-items-center position-relative">
+			<div class="d-flex justify-content-center justify-content-md-start align-items-center flex-1">
+				<img src="images/logo.png" class="logo">
+
+				<div class="d-none d-md-block custom-select ms-4">
+					<button type="button" class="py-3 w-100">Казань</button>
+					<div class="options search-list p-3">
+						<input type="search" placeholder="Поиск" class="search-in-list">
+						<div class="radio search-item mb-2">
+							<input type="radio" name="sort" value="Казань" checked="">
+							<label>Казань</label>
+						</div>
+						<div class="radio search-item mb-2">
+							<input type="radio" name="sort" value="Набережные Челны">
+							<label>Набережные Челны</label>
+						</div>
+						<div class="radio search-item mb-2">
+							<input type="radio" name="sort" value="Альметьевск">
+							<label>Альметьевск</label>
+						</div>
+						<div class="radio search-item mb-2">
+							<input type="radio" name="sort" value="Ижевск">
+							<label>Ижевск</label>
+						</div>
+					</div>
+				</div>
+
+				<nav class="d-none d-md-flex align-items-center ms-4">
+					<a href="#">О нас</a>
+					<a href="articles.html">Новости</a>
+				</nav>
+			</div>
+			<div class="d-flex align-items-center header-btns">
+				<!-- ВХОД - кнопка должна отображаться, если пользователь не зарегистрирован или не вошёл в свой аккаунт -->
+				<button class="d-flex btn-svg" type="button" data-bs-toggle="modal" data-bs-target="#registration">
+					<span class="d-none d-md-block me-2">Вход/регистрация</span>
+					<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13 1H17C17.5304 1 18.0391 1.21071 18.4142 1.58579C18.7893 1.96086 19 2.46957 19 3V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H13"/>
+						<path d="M8 15L13 10L8 5"/>
+						<path d="M13 10H1"/>
+					</svg>						
+				</button>
+				<!-- ВЫХОД - кнопка должна отображаться, если пользователь вошёл в свой аккаунт -->
+				<button type="button" class="btn-svg">
+					<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+						<path d="M14 15L19 10L14 5"/>
+						<path d="M19 10H7"/>
+						<path d="M7 1H3C2.46957 1 1.96086 1.21071 1.58579 1.58579C1.21071 1.96086 1 2.46957 1 3V17C1 17.5304 1.21071 18.0391 1.58579 18.4142C1.96086 18.7893 2.46957 19 3 19H7"/>
+					</svg>						
+				</button>
+			</div>
+			
+		</div>
+	</header>
+
+	<div class="container-md py-4 py-md-5 mb-lg-5">
+		<section id="sec-7">
+			<h1 class="inner-page">Новости и полезные статьи</h1>
+			<article class="preview">
+				<div class="row gx-3 gx-md-4 align-items-center">
+					<div class="col-5">
+						<img src="images/article.jpg" alt="Что такое строительство?">
+					</div>
+					<div class="col-7">
+						<time datetime="2020-08-31 17:00" class="gray mb-1 mb-sm-2 mb-md-3 mb-lg-4 mb-xxl-5">31.08.2020</time>
+						<h3>Что такое строительство?</h3>
+						<div class="text">
+							<p>В широком смысле к строительству (как отрасли) также относят капитальный и текущий ремонт зданий и сооружений, а ещё их реконструкцию, реставрацию и реновацию.</p>
+							<p>Процесс строительства включает в себя все организационные, изыскательские, проектные, строительно-монтажные и пусконаладочные работы, связанные с созданием, изменением или сносом объекта, а также взаимодействие с компетентными органами по поводу производства таких работ.</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum laudantium consectetur, est quibusdam atque voluptate debitis explicabo. Necessitatibus quibusdam commodi reiciendis? Alias obcaecati odio quo soluta est quia tempora explicabo.</p>
+						</div>
+						<div class="text-md-end mt-md-4">
+							<a href="article.html" class="stretched-link">
+								<span class="color-1 fw_7 me-2">Читать далее</span>
+								<svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20.0833 4.25498C20.0831 4.25474 20.0829 4.25447 20.0826 4.25424L16.0005 0.225601C15.6946 -0.076198 15.2 -0.0750749 14.8956 0.228235C14.5912 0.531506 14.5924 1.02203 14.8982 1.32387L17.639 4.02864H1.09375C0.662265 4.02864 0.3125 4.37549 0.3125 4.80338C0.3125 5.23126 0.662265 5.57811 1.09375 5.57811H17.6389L14.8982 8.28288C14.5924 8.58472 14.5912 9.07524 14.8956 9.37851C15.2 9.68186 15.6947 9.68291 16.0005 9.38115L20.0827 5.35251C20.0829 5.35228 20.0831 5.35201 20.0834 5.35177C20.3894 5.04893 20.3884 4.55681 20.0833 4.25498Z" fill="#E3AC41"/>
+								</svg>								
+							</a>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="preview">
+				<div class="row gx-3 gx-md-4 align-items-center">
+					<div class="col-5">
+						<img src="images/article.jpg" alt="Что такое строительство?">
+					</div>
+					<div class="col-7">
+						<time datetime="2020-08-31 17:00" class="gray mb-1">31.08.2020</time>
+						<h3>Что такое строительство?</h3>
+						<div class="text">
+							<p>В широком смысле к строительству (как отрасли) также относят капитальный и текущий ремонт зданий и сооружений, а ещё их реконструкцию, реставрацию и реновацию.</p>
+							<p>Процесс строительства включает в себя все организационные, изыскательские, проектные, строительно-монтажные и пусконаладочные работы, связанные с созданием, изменением или сносом объекта, а также взаимодействие с компетентными органами по поводу производства таких работ.</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum laudantium consectetur, est quibusdam atque voluptate debitis explicabo. Necessitatibus quibusdam commodi reiciendis? Alias obcaecati odio quo soluta est quia tempora explicabo.</p>
+						</div>
+						<div class="text-md-end mt-md-4">
+							<a href="article.html" class="stretched-link">
+								<span class="color-1 fw_7 me-2">Читать далее</span>
+								<svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20.0833 4.25498C20.0831 4.25474 20.0829 4.25447 20.0826 4.25424L16.0005 0.225601C15.6946 -0.076198 15.2 -0.0750749 14.8956 0.228235C14.5912 0.531506 14.5924 1.02203 14.8982 1.32387L17.639 4.02864H1.09375C0.662265 4.02864 0.3125 4.37549 0.3125 4.80338C0.3125 5.23126 0.662265 5.57811 1.09375 5.57811H17.6389L14.8982 8.28288C14.5924 8.58472 14.5912 9.07524 14.8956 9.37851C15.2 9.68186 15.6947 9.68291 16.0005 9.38115L20.0827 5.35251C20.0829 5.35228 20.0831 5.35201 20.0834 5.35177C20.3894 5.04893 20.3884 4.55681 20.0833 4.25498Z" fill="#E3AC41"/>
+								</svg>								
+							</a>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="preview">
+				<div class="row gx-3 gx-md-4 align-items-center">
+					<div class="col-5">
+						<img src="images/article.jpg" alt="Что такое строительство?">
+					</div>
+					<div class="col-7">
+						<time datetime="2020-08-31 17:00" class="gray mb-1">31.08.2020</time>
+						<h3>Что такое строительство?</h3>
+						<div class="text">
+							<p>В широком смысле к строительству (как отрасли) также относят капитальный и текущий ремонт зданий и сооружений, а ещё их реконструкцию, реставрацию и реновацию.</p>
+							<p>Процесс строительства включает в себя все организационные, изыскательские, проектные, строительно-монтажные и пусконаладочные работы, связанные с созданием, изменением или сносом объекта, а также взаимодействие с компетентными органами по поводу производства таких работ.</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum laudantium consectetur, est quibusdam atque voluptate debitis explicabo. Necessitatibus quibusdam commodi reiciendis? Alias obcaecati odio quo soluta est quia tempora explicabo.</p>
+						</div>
+						<div class="text-md-end mt-md-4">
+							<a href="article.html" class="stretched-link">
+								<span class="color-1 fw_7 me-2">Читать далее</span>
+								<svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20.0833 4.25498C20.0831 4.25474 20.0829 4.25447 20.0826 4.25424L16.0005 0.225601C15.6946 -0.076198 15.2 -0.0750749 14.8956 0.228235C14.5912 0.531506 14.5924 1.02203 14.8982 1.32387L17.639 4.02864H1.09375C0.662265 4.02864 0.3125 4.37549 0.3125 4.80338C0.3125 5.23126 0.662265 5.57811 1.09375 5.57811H17.6389L14.8982 8.28288C14.5924 8.58472 14.5912 9.07524 14.8956 9.37851C15.2 9.68186 15.6947 9.68291 16.0005 9.38115L20.0827 5.35251C20.0829 5.35228 20.0831 5.35201 20.0834 5.35177C20.3894 5.04893 20.3884 4.55681 20.0833 4.25498Z" fill="#E3AC41"/>
+								</svg>								
+							</a>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="preview">
+				<div class="row gx-3 gx-md-4 align-items-center">
+					<div class="col-5">
+						<img src="images/article.jpg" alt="Что такое строительство?">
+					</div>
+					<div class="col-7">
+						<time datetime="2020-08-31 17:00" class="gray mb-1">31.08.2020</time>
+						<h3>Что такое строительство?</h3>
+						<div class="text">
+							<p>В широком смысле к строительству (как отрасли) также относят капитальный и текущий ремонт зданий и сооружений, а ещё их реконструкцию, реставрацию и реновацию.</p>
+							<p>Процесс строительства включает в себя все организационные, изыскательские, проектные, строительно-монтажные и пусконаладочные работы, связанные с созданием, изменением или сносом объекта, а также взаимодействие с компетентными органами по поводу производства таких работ.</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum laudantium consectetur, est quibusdam atque voluptate debitis explicabo. Necessitatibus quibusdam commodi reiciendis? Alias obcaecati odio quo soluta est quia tempora explicabo.</p>
+						</div>
+						<div class="text-md-end mt-md-4">
+							<a href="article.html" class="stretched-link">
+								<span class="color-1 fw_7 me-2">Читать далее</span>
+								<svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20.0833 4.25498C20.0831 4.25474 20.0829 4.25447 20.0826 4.25424L16.0005 0.225601C15.6946 -0.076198 15.2 -0.0750749 14.8956 0.228235C14.5912 0.531506 14.5924 1.02203 14.8982 1.32387L17.639 4.02864H1.09375C0.662265 4.02864 0.3125 4.37549 0.3125 4.80338C0.3125 5.23126 0.662265 5.57811 1.09375 5.57811H17.6389L14.8982 8.28288C14.5924 8.58472 14.5912 9.07524 14.8956 9.37851C15.2 9.68186 15.6947 9.68291 16.0005 9.38115L20.0827 5.35251C20.0829 5.35228 20.0831 5.35201 20.0834 5.35177C20.3894 5.04893 20.3884 4.55681 20.0833 4.25498Z" fill="#E3AC41"/>
+								</svg>								
+							</a>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="preview">
+				<div class="row gx-3 gx-md-4 align-items-center">
+					<div class="col-5">
+						<img src="images/article.jpg" alt="Что такое строительство?">
+					</div>
+					<div class="col-7">
+						<time datetime="2020-08-31 17:00" class="gray mb-1">31.08.2020</time>
+						<h3>Что такое строительство?</h3>
+						<div class="text">
+							<p>В широком смысле к строительству (как отрасли) также относят капитальный и текущий ремонт зданий и сооружений, а ещё их реконструкцию, реставрацию и реновацию.</p>
+							<p>Процесс строительства включает в себя все организационные, изыскательские, проектные, строительно-монтажные и пусконаладочные работы, связанные с созданием, изменением или сносом объекта, а также взаимодействие с компетентными органами по поводу производства таких работ.</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum laudantium consectetur, est quibusdam atque voluptate debitis explicabo. Necessitatibus quibusdam commodi reiciendis? Alias obcaecati odio quo soluta est quia tempora explicabo.</p>
+						</div>
+						<div class="text-md-end mt-md-4">
+							<a href="article.html" class="stretched-link">
+								<span class="color-1 fw_7 me-2">Читать далее</span>
+								<svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20.0833 4.25498C20.0831 4.25474 20.0829 4.25447 20.0826 4.25424L16.0005 0.225601C15.6946 -0.076198 15.2 -0.0750749 14.8956 0.228235C14.5912 0.531506 14.5924 1.02203 14.8982 1.32387L17.639 4.02864H1.09375C0.662265 4.02864 0.3125 4.37549 0.3125 4.80338C0.3125 5.23126 0.662265 5.57811 1.09375 5.57811H17.6389L14.8982 8.28288C14.5924 8.58472 14.5912 9.07524 14.8956 9.37851C15.2 9.68186 15.6947 9.68291 16.0005 9.38115L20.0827 5.35251C20.0829 5.35228 20.0831 5.35201 20.0834 5.35177C20.3894 5.04893 20.3884 4.55681 20.0833 4.25498Z" fill="#E3AC41"/>
+								</svg>								
+							</a>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="preview">
+				<div class="row gx-3 gx-md-4 align-items-center">
+					<div class="col-5">
+						<img src="images/article.jpg" alt="Что такое строительство?">
+					</div>
+					<div class="col-7">
+						<time datetime="2020-08-31 17:00" class="gray mb-1">31.08.2020</time>
+						<h3>Что такое строительство?</h3>
+						<div class="text">
+							<p>В широком смысле к строительству (как отрасли) также относят капитальный и текущий ремонт зданий и сооружений, а ещё их реконструкцию, реставрацию и реновацию.</p>
+							<p>Процесс строительства включает в себя все организационные, изыскательские, проектные, строительно-монтажные и пусконаладочные работы, связанные с созданием, изменением или сносом объекта, а также взаимодействие с компетентными органами по поводу производства таких работ.</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum laudantium consectetur, est quibusdam atque voluptate debitis explicabo. Necessitatibus quibusdam commodi reiciendis? Alias obcaecati odio quo soluta est quia tempora explicabo.</p>
+						</div>
+						<div class="text-md-end mt-md-4">
+							<a href="article.html" class="stretched-link">
+								<span class="color-1 fw_7 me-2">Читать далее</span>
+								<svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20.0833 4.25498C20.0831 4.25474 20.0829 4.25447 20.0826 4.25424L16.0005 0.225601C15.6946 -0.076198 15.2 -0.0750749 14.8956 0.228235C14.5912 0.531506 14.5924 1.02203 14.8982 1.32387L17.639 4.02864H1.09375C0.662265 4.02864 0.3125 4.37549 0.3125 4.80338C0.3125 5.23126 0.662265 5.57811 1.09375 5.57811H17.6389L14.8982 8.28288C14.5924 8.58472 14.5912 9.07524 14.8956 9.37851C15.2 9.68186 15.6947 9.68291 16.0005 9.38115L20.0827 5.35251C20.0829 5.35228 20.0831 5.35201 20.0834 5.35177C20.3894 5.04893 20.3884 4.55681 20.0833 4.25498Z" fill="#E3AC41"/>
+								</svg>								
+							</a>
+						</div>
+					</div>
+				</div>
+			</article>
+			<div class="row justify-content-center mt-4 mt-lg-5">
+				<div class="col-sm-8 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+					<button type="button" class="btn_main w-100">Загрузить ещё</button>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer class="desktop d-none d-md-block py-4">
+		<div class="container">
+			<div class="row row-cols-2 align-items-center">
+				<div>
+					<div class="f_13 fw_7 mb-1">@ <span id="year"></span> бетон</div>
+					<div class="f_13">Политика конфиденциальности</div>
+				</div>
+				<div>
+					<a class="developers" href="http://asmpromo.ru/" alt="Создание и продвижение сайтов" title="Создание и продвижение сайтов" target="_blank">
+						<div class="f_09 text-uppercase">Создание и продвижение сайтов</div>
+						<img src="images/asm_white.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<footer class="mobile d-flex d-md-none justify-content-between py-3 px-5">
+		<button><img src="images/icons/home.svg" alt=""></button>
+		<button><img src="images/icons/mail.svg" alt=""></button>
+		<a href="articles.html"><img src="images/icons/news.svg" alt=""></a>
+		<button><img src="images/icons/truck.svg" alt=""></button>
+	</footer>
+
+	<!-- Skripts -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="registration" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+					<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18 6L6 18"/>
+						<path d="M6 6L18 18"/>
+					</svg>					
+				</button>
+				<h3 class="text-center">Регистрация</h3>
+				<div class="fw_5 gray text-center mb-3">Введите номер телефона</div>
+				<div class="row justify-content-center">
+					<div class="col-6">
+						<form action="">
+							<input type="text" placeholder="+7 (985) 567-56-55">
+							<button type="button" data-bs-toggle="modal" data-bs-target="#confirmation" data-bs-dismiss="modal" class="btn_main w-100 w-md-auto mt-3">Продолжить</button>
+						</form>
+					</div>
+				</div>
+				<div class="text-center d-flex justify-content-center mt-3">
+					<div>У вас есть учетная запись?</div>
+					<button type="button" data-bs-toggle="modal" data-bs-target="#entrance" data-bs-dismiss="modal" class="blue fw_5 ms-2">Войти</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="entrance" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+					<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18 6L6 18"/>
+						<path d="M6 6L18 18"/>
+					</svg>					
+				</button>
+				<h3 class="text-center">Вход</h3>
+				<div class="fw_5 gray text-center mb-3">Введите номер телефона</div>
+				<div class="row justify-content-center">
+					<div class="col-6">
+						<form action="">
+							<input type="text" placeholder="+7 (985) 567-56-55">
+							<button type="button" data-bs-toggle="modal" data-bs-target="#confirmation" class="btn_main w-100 w-md-auto mt-3">Продолжить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="confirmation" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+					<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18 6L6 18"/>
+						<path d="M6 6L18 18"/>
+					</svg>					
+				</button>
+				<h3 class="text-center">Подтвердите номер телефона</h3>
+				<div class="gray text-center mb-3">В течение 2 минут вы получите СМС с кодом подтверждения на номер телефона +7 (985) 567-56-55</div>
+				<div class="row justify-content-center">
+					<div class="col-9">
+						<form action="">
+							<input type="text" placeholder="Введите код">
+							<button type="button" class="blue mt-1">Получить новый код</button>
+							<button type="submit" class="btn_main w-100 w-md-auto mt-3">Подтвердить</button>
+							<button type="button" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registration" class="btn_main w-100 w-md-auto mt-3">Изменить номер телефона</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/range-slider.js"></script>
+	
+</body>
+</html>

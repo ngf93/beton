@@ -148,6 +148,18 @@ button:hover, button:focus, button:active {cursor: pointer;}
     color: #fff;
     background-color: var(--color-2);
 }
+.btn-svg {display: flex;}
+.btn-svg svg {
+    width: 1.25em;
+    height: 1.25em;
+    fill: none;
+}
+.btn-svg svg path {
+    stroke: var(--color-1);
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
 
 
 .btn_collapse::before {content: "Загрузить ещё";}
@@ -164,6 +176,10 @@ h1, h2, h3, h4 {
 h1 {
     font-weight: 300;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+h1.inner-page {
+    font-weight: 500;
+    text-shadow: unset;
 }
 h2 {
     font-weight: 500;
@@ -190,6 +206,7 @@ h4 {font-weight: 600;}
 }
 @media (min-width: 992px) {
     h2 {font-size: 2.5em;}
+    h1.inner-page {font-size: 2em;}
 }
 
 
@@ -230,3 +247,6 @@ h4 {font-weight: 600;}
 .lh_n {line-height: normal;}
 .bb_1 {border-bottom: 1px solid;}
 .t_ind {text-indent: 2rem;}
+
+
+.flex-1 {flex:1;}
