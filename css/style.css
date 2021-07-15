@@ -185,6 +185,11 @@ header .header-btns {
 }
 
 
+main {
+  min-height: calc(100vh - 105px);
+}
+
+
 /* sec 7 */
 article.preview {
   position: relative;
@@ -316,6 +321,64 @@ article.full p {
 }
 
 
+/* section 8 */
+.notification {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1em;
+  margin-bottom: 1em;
+  position: relative;
+}
+.notification .text {
+  line-height: 1.25rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 2.5rem;
+  transition: height .5s ease-in-out;
+}
+.notification .text.full {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: hidden;
+  height: auto;
+  transition: height .5s ease-in-out;
+}
+.notification button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: .5em;
+}
+.notification button svg {
+  fill: none;
+  width: 1em;
+}
+.notification button.rotate svg {
+  transform: rotate(180deg);
+}
+.notification button svg path {
+  stroke: var(--color-1);
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+@media (min-width: 768px) {
+  .notification {
+    padding: 2em;
+    margin-bottom: 2em;
+  }
+  .notification button {padding: 1em;}
+}
+
+
+
+/* slider */
 .swiper-1 {
   width: 100%;
   height: calc(17.6em + 66px);

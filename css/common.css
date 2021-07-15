@@ -159,6 +159,12 @@ button:hover, button:focus, button:active {cursor: pointer;}
     stroke-width: 2px;
     stroke-linecap: round;
     stroke-linejoin: round;
+    transition: .25s ease-in-out;
+}
+.btn-svg:hover svg path, 
+.btn-svg:focus svg path, 
+.btn-svg:active svg path {
+    stroke: var(--color-2);
 }
 
 

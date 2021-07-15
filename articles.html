@@ -57,8 +57,14 @@
 				</nav>
 			</div>
 			<div class="d-flex align-items-center header-btns">
+				<a href="notifications.html" class="btn-svg">
+					<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"/>
+						<path d="M22 6L12 13L2 6"/>
+					</svg>
+				</a>
 				<!-- ВХОД - кнопка должна отображаться, если пользователь не зарегистрирован или не вошёл в свой аккаунт -->
-				<button class="d-flex btn-svg" type="button" data-bs-toggle="modal" data-bs-target="#registration">
+				<button class="d-flex btn-svg ms-4" type="button" data-bs-toggle="modal" data-bs-target="#registration">
 					<span class="d-none d-md-block me-2">Вход/регистрация</span>
 					<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 						<path d="M13 1H17C17.5304 1 18.0391 1.21071 18.4142 1.58579C18.7893 1.96086 19 2.46957 19 3V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H13"/>
@@ -67,7 +73,8 @@
 					</svg>						
 				</button>
 				<!-- ВЫХОД - кнопка должна отображаться, если пользователь вошёл в свой аккаунт -->
-				<button type="button" class="btn-svg">
+				<button type="button" class="btn-svg ms-4">
+					<span class="d-none d-lg-block me-2">Выйти</span>
 					<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 						<path d="M14 15L19 10L14 5"/>
 						<path d="M19 10H7"/>
@@ -79,7 +86,7 @@
 		</div>
 	</header>
 
-	<div class="container-md py-4 py-md-5 mb-lg-5">
+	<main class="container-md pt-2 pt-sm-3 pb-sm-4 pt-md-4 pb-md-5">
 		<section id="sec-7">
 			<h1 class="inner-page">Новости и полезные статьи</h1>
 			<article class="preview">
@@ -232,7 +239,7 @@
 				</div>
 			</div>
 		</section>
-	</div>
+	</main>
 
 	<footer class="desktop d-none d-md-block py-4">
 		<div class="container">
@@ -258,7 +265,7 @@
 				<path d="M9 22V12H15V22"/>
 			</svg>				
 		</a>
-		<a href="#">
+		<a href="notifications.html">
 			<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 				<path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"/>
 				<path d="M22 6L12 13L2 6"/>
